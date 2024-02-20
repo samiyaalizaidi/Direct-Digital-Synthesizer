@@ -15,3 +15,7 @@ Generating discrete-time Sine waves of different frequencies.
 ### Phase Accumulator
 
 ### Phase-to-Amplitude Generator
+
+## System Specifications
+
+## Results
