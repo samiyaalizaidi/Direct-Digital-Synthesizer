@@ -1,4 +1,4 @@
-# Direct Digital Synthesis
+# Direct Digital Synthesizer for Sine Wave Generation
 Sine wave generator in verilog HDL.
 ## Parameters
 <ol>
