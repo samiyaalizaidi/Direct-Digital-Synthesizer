@@ -1,5 +1,6 @@
 # Direct Digital Synthesizer for Sine Wave Generation
 Generating discrete-time Sine waves of different frequencies.
+
 ## Parameters
 <ol>
 <li>Clock Frequency: 1 MHz</li>
@@ -8,4 +9,9 @@ Generating discrete-time Sine waves of different frequencies.
 <li>Number of Registers Allowed: 8-10</li>
 <li>10-bit Digital Representation</li>
 </ol>
+
 ## Architecture
+
+### Phase Accumulator
+
+### Phase-to-Amplitude Generator
