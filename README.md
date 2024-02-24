@@ -12,8 +12,11 @@ Generating discrete-time Sine waves of different frequencies.
 
 ## Architecture
 
-![DDS Architecture](https://www.analog.com/en/_/media/images/analog-dialogue/en/volume-38/number-3/articles/all-about-direct-digital-synthesis/dds_fig-05.gif?rev=586c84e827e942878b561a6f41bf3892&sc_lang=en)
+![DDS](https://wirelesspi.com/wp-content/uploads/2023/01/figure-dds-nco-ideal.png)
 
+![DDS Architecture](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOZWxcCP_ocs9JiWnQDCXk_Zzhbe4Oy1zN1m1MYqjwPTdmV_FTgtPh4Wc5zBnKn8yfeuw&usqp=CAU)
+
+![dds](https://ars.els-cdn.com/content/image/3-s2.0-B9780128154052000051-f05-09-9780128154052.jpg)
 ### Phase Accumulator
 
 ### Phase-to-Amplitude Generator
