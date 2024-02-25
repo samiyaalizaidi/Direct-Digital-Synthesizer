@@ -16,5 +16,5 @@ module sine_wave_generator(
     output [9:0] phase; // 10 bit phase register from the phase accumulator
     
     phase_accumulator            accumulator_inst (clock, reset, phase);
-    phase_to_amplitude_converter converter_inst   (clock, reset, phase, data_sin);
+    phase_to_amplitude_converter converter_inst   (reset, phase, data_sin);
 endmodule
