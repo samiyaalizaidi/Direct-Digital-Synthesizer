@@ -1,22 +1,19 @@
 `timescale 1ns / 1ps
 
 module phase_to_amplitude_converter(
-    clock,   // clock @ 1MHz
     reset,   // reset signal
     phase,   // 10-bit phase accumulator
     data_sin // output sine wave values   
     );
 
-    input clock,
-          reset;
+    input reset;
           
     input  [9:0] phase;
     
     output [9:0] data_sin;
     reg    [9:0] data_sin;
     
-    always @ (posedge clock or
-              posedge reset or phase) begin
+    always @ (*) begin
               
             if (reset) begin
                 data_sin <= 10'd100;
@@ -422,9 +419,8 @@ module phase_to_amplitude_converter(
                 data_sin <= 10'd94;
             end
             
-            else begin
-                data_sin <= 10'b00_0110_0100; //10'd100;    
-            end       
+            // else begin
+            //     data_sin <= 10'b00_0110_0100; //10'd100;    
+            // end       
     end         
 endmodule
-
