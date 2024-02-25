@@ -23,7 +23,7 @@ In this project, however, the main focus is on the phase accumulator and the pha
 ### Phase Accumulator
 The phase accumulator continuously adds phase increments at a specific rate determined by the desired output frequency of the synthesized waveform. The phase increments are usually represented as fixed-point numbers (FCW). The phase values are accumulated over time and as they reach their maximum value (typically the maximum representable value of the accumulator), it wraps around to zero and continues accumulating phase values. This wrapping behavior allows the DDS to generate periodic waveforms. The phase accumulator is usually driven by a clock signal whose frequency determines the resolution and frequency resolution of the synthesized waveform. By adjusting the clock frequency or the phase increment value, the output frequency of the DDS can be controlled.
 
-The phase accumulator module consists of a frequency register (`phase`) in which the phases are accumulated and an FCW aka frequency control word (`increment`) that gives the constant phase value that needs to be added into the frequency register. To calculate FCWs for different frequencies this formula was used:
+The phase accumulator module consists of a frequency register (`phase`) in which the phases are accumulated, and an FCW aka frequency control word (`increment`) that gives the constant phase value that needs to be added into the frequency register. To calculate FCWs for different frequencies, this formula was used:
 ```math
 \text{FCW} = \frac{2^N \times \text{Desired Frequency}}{\text{Clock Frequency}}
 
