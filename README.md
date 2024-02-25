@@ -76,3 +76,8 @@ Similarly, for a frequency of ``250KHz``, the output can be seen below ([origina
 The wave for the highest resolution was obtained for the frequency ``10KHz`` as seen in the plot below. The file read to plot this can be found [here](results/original/logs-10KHz.txt).
 
 ![10](results/plots/10khz.png)
+
+
+--- 
+
+All of the code in this repository is written by [Samiya Ali Zaidi](https://github.com/samiyaalizaidi). 
