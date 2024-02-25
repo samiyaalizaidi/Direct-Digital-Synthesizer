@@ -49,7 +49,9 @@ For this project, the sine wave look-up table values were obtained using [this](
 }
 ```
 ## Implementation
-The Verilog code was written and simulated using ``Xilinx Vivado v2020.1``. The file ``phase_accumulator.v`` consists of the code for the phase accumulator and the file ``phase_to_amplitude_converter.v`` consists of the look-up table/ranges used to map a given phase to its amplitude. These modules were then cascaded using the top-level module, ``sine_wave_generator.v``.
+The Verilog code was written and simulated using ``Xilinx Vivado v2020.1``. The file ``phase_accumulator.v`` consists of the code for the phase accumulator and the file ``phase_to_amplitude_converter.v`` consists of the look-up table/ranges used to map a given phase to its amplitude. These modules were then cascaded using the top-level module, ``sine_wave_generator.v``, as shown in the schematic below:
+
+![schematic](results/original/schematic.jpg)
 
 ``testbench.v`` is the testbench used to simulate the top-level module and obtain the waveforms. The results of this simulation were dumped into the TCL console and subsequently stored in a ``.txt`` file. Then, the results from that file were read and visualized using the ``MATLAB`` script, ``sine_wave_display.m``.
 ## Results
@@ -76,7 +78,6 @@ Similarly, for a frequency of ``250KHz``, the output can be seen below ([origina
 The wave for the highest resolution was obtained for the frequency ``10KHz`` as seen in the plot below. The file read to plot this can be found [here](results/original/logs-10KHz.txt).
 
 ![10](results/plots/10khz.png)
-
 
 --- 
 
