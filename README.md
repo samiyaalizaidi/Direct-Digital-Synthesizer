@@ -1,5 +1,5 @@
 # Direct Digital Synthesizer for Sine Wave Generation
-Generating discrete-time Sine waves of different frequencies.
+Generating discrete-time sine waves of different frequencies.
 
 ## Parameters
 <ol>
@@ -42,6 +42,7 @@ The sine wave look-up table values were obtained using [this](https://deepbluemb
 }
 ```
 ## Implementation
-The Verilog code was written and simulated using ``Xilinx Vivado v2020.1``. The file ``phase_accumulator.v`` consists the code for the phase accumulator and the file ``phase_to_amplitude_converter.v`` consists of the look-up table/ranges used to map a given phase to its amplitude. Both of these modules were then cascaded using the top level module, ``sine_wave_generator.v``.
+The Verilog code was written and simulated using ``Xilinx Vivado v2020.1``. The file ``phase_accumulator.v`` consists of the code for the phase accumulator and the file ``phase_to_amplitude_converter.v`` consists of the look-up table/ranges used to map a given phase to its amplitude. These modules were then cascaded using the top-level module, ``sine_wave_generator.v``.
 
+``testbench.v`` is the testbench used to simulate the top-level module and obtain the waveforms. The results of this simulation were dumped into the TCL console and subsequently stored in a ``.txt`` file. Then, the results from that file were read and visualized using the MATLAB script, ``sine_wave_display.m``.
 ## Results
