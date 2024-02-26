@@ -81,4 +81,4 @@ The wave for the highest resolution was obtained for the frequency ``10KHz`` as 
 
 --- 
 
-All of the code in this repository is written by [Samiya Ali Zaidi](https://github.com/samiyaalizaidi). 
+**Contributions**: All of the code in this repository is written by [Samiya Ali Zaidi](https://github.com/samiyaalizaidi). 
