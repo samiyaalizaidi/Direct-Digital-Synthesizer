@@ -67,11 +67,11 @@ Time:              7500000, Phase:  768, Data_sin:    0
 Time:              8500000, Phase:  896, Data_sin:   27
 Time:              9500000, Phase:    0, Data_sin:  100
 ```
-It can be observed how the phase resets to 0 when the frequency register exceeds the maximum achievable value. The sine wave plotted using these values is shown below ([original logs](results/original/logs-125KHz.txt), [logs used for plotting](results/for_MATLAB/logs-125KHz.txt)):
+It can be observed how the phase resets to 0 when the frequency register exceeds the maximum achievable value. The sine wave plotted using these values is shown below ([original logs](results/original/logs-125KHz.txt), [logs used for plotting](<results/for MATLAB/logs-125KHz.txt>)):
 
 ![125](results/plots/125khz.png)
 
-Similarly, for a frequency of ``250KHz``, the output can be seen below ([original logs](results/original/logs-250KHz.txt), [logs used for plotting](results/for_MATLAB/logs-250KHz.txt)):
+Similarly, for a frequency of ``250KHz``, the output can be seen below ([original logs](results/original/logs-250KHz.txt), [logs used for plotting](<results/for MATLAB/logs-125KHz.txt>)):
 
 ![250](results/plots/250khz.png)
 
