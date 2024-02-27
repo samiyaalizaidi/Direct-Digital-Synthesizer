@@ -53,7 +53,7 @@ The Verilog code was written and simulated using ``Xilinx Vivado v2020.1``. The 
 
 ![schematic](results/original/schematic.jpg)
 
-``testbench.v`` is the testbench used to simulate the top-level module and obtain the waveforms. The results of this simulation were dumped into the TCL console and subsequently stored in a ``.txt`` file. Then, the results from that file were read and visualized using the ``MATLAB`` script, ``sine_wave_display.m``.
+``testbench.v`` is the testbench used to simulate the top-level module and obtain the waveforms. The results of this simulation were dumped into the logs and subsequently stored in a ``.txt`` file. Then, the results from that file were read and visualized using the ``MATLAB`` script, ``sine_wave_display.m``.
 ## Results
 The results obtained when the desired frequency was set to ``125KHz`` were:
 ```
