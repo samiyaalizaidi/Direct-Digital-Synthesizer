@@ -6,10 +6,6 @@ module phase_accumulator(
     phase   // returns the 10-bit phase register   
     );
     
-    parameter clk_frequency = 1000000;
-    
-    parameter desired_frequency = 250000;
-    
     parameter max_val = 1024;  // 2^10
     
     parameter increment = 16 ; // (max_val * desired_frequency) / clk_frequency
