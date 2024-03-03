@@ -13,7 +13,12 @@ This DDS implementation generates sine waves between the range ``10KHz - 250KHz`
 ## Architecture
 The Direct Digital Synthesizer (DDS) architecture consists of key components including a phase accumulator that accumulates phase values based on the desired output frequency, a phase-to-amplitude converter mapping phase values to amplitude, and a Digital-to-Analog Converter (DAC) converting digital signals to analog waveforms. DDS systems feature frequency tuning control, clock sources driving timing components, and control interfaces enabling parameter adjustments. Output buffering and filtering stages ensure waveform conditioning for specific applications.
 
-![DDS](https://wirelesspi.com/wp-content/uploads/2023/01/figure-dds-nco-ideal.png)
+<p align="center">
+ <img src="https://wirelesspi.com/wp-content/uploads/2023/01/figure-dds-nco-ideal.png" alt="DDS">
+</p>
+
+<!-- ![DDS](https://wirelesspi.com/wp-content/uploads/2023/01/figure-dds-nco-ideal.png) -->
+
 
 In this project, however, the main focus is on the phase accumulator and the phase-to-amplitude converter stages.
 
