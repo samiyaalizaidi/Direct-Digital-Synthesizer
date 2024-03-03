@@ -56,7 +56,9 @@ For this project, the sine wave look-up table values were obtained using [this](
 ## Implementation
 The Verilog code was written and simulated using ``Xilinx Vivado v2020.1``. The file ``phase_accumulator.v`` consists of the code for the phase accumulator and the file ``phase_to_amplitude_converter.v`` consists of the look-up table/ranges used to map a given phase to its amplitude. These modules were then cascaded using the top-level module, ``sine_wave_generator.v``, as shown in the schematic below:
 
-![schematic](results/original/schematic.jpg)
+<p align="center">
+ <img src="results/original/schematic.jpg" alt="schematic">
+</p>
 
 ``testbench.v`` is the testbench used to simulate the top-level module and obtain the waveforms. The results of this simulation were dumped into the logs and subsequently stored in a ``.txt`` file. Then, the results from that file were read and visualized using the ``MATLAB`` script, ``sine_wave_display.m``.
 ## Results
@@ -74,15 +76,27 @@ Time:              9500000, Phase:    0, Data_sin:  100
 ```
 It can be observed how the phase resets to 0 when the frequency register exceeds the maximum achievable value. The sine wave plotted using these values is shown below ([original logs](results/original/logs-125KHz.txt), [logs used for plotting](<results/for MATLAB/logs-125KHz.txt>)):
 
-![125](results/plots/125khz.png)
+<p align="center">
+ <img src="results/plots/125khz.png" alt="sine wave">
+</p>
+
+<!--![125](results/plots/125khz.png)-->
 
 Similarly, for a frequency of ``250KHz``, the output can be seen below ([original logs](results/original/logs-250KHz.txt), [logs used for plotting](<results/for MATLAB/logs-125KHz.txt>)):
 
-![250](results/plots/250khz.png)
+<p align="center">
+ <img src="results/plots/250khz.png" alt="sine wave">
+</p>
+
+<!--![250](results/plots/250khz.png)-->
 
 The wave for the highest resolution was obtained for the frequency ``10KHz`` as seen in the plot below. The file read to plot this can be found [here](results/original/logs-10KHz.txt).
 
-![10](results/plots/10khz.png)
+<p align="center">
+ <img src="results/plots/10khz.png" alt="sine wave">
+</p>
+
+<!--![10](results/plots/10khz.png)-->
 
 --- 
 
